@@ -27,6 +27,12 @@ changerator.py
 ```
 Changerator is there for you when you've used a genome assembler that creates a directory with a contigs.fa file, but you would REALLY like for that file to be name {name_of_your_directory}.fasta and moved to a better directory.
 
+Using changerator is super easy.
+
+```
+changerator.py /path/to/assembly/
+```
+Just direct the script to the directory containing all of your assembler output directories. 
 
 ## Authors
 
