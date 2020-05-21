@@ -14,7 +14,7 @@ python3.6+
 
 ### Installing Dependencies
 
-Installing python3.6+
+#### Installing python3.6+
 First, check your version of python
 
 ```
