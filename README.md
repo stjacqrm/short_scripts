@@ -1,6 +1,6 @@
 # random_scripts
 
-Just some short scripts that I made to solve the world's smallest bioinformatics problems.
+Just some short scripts that solve the world's smallest bioinformatics problems.
 
 ## Getting Started
 
