@@ -1,18 +1,38 @@
 # random_scripts
 
-Just some short scripts that I made to solve the world's smallest bioinformatics problems.
+Just some short scripts that solve the world's smallest bioinformatics problems.
+
+## Getting Started
 
 ### Prerequisites
 
-What things you need to run the scripts
+What dependencies you need to run random_scripts
 
 ```
-python3+
+python3.6+
 ```
 
-### Installing
+### Installing Dependencies
 
-The world's easiest install can be done using git clone, and setting to path
+#### Installing python3.6+
+First, check your version of python
+
+```
+$ python -v
+```
+
+If you don't have python3.6+, use Anaconda to install:
+
+```
+$ sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+$ wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
+$ bash Anaconda3-2019.10-Linux-x86_64.sh
+$ source ~/.bashrc
+```
+
+### Installing the code
+
+To get random_scripts, clone this repository:
 
 ```
 $ git clone https://github.com/stjacqrm/random_scripts.git
