@@ -40,7 +40,7 @@ $ git clone https://github.com/stjacqrm/random_scripts.git
 
 ## Current scripts
 
-Currently, there's just the one.
+#### Changerator
 
 ```
 changerator.py
@@ -52,8 +52,51 @@ Using changerator is super easy.
 ```
 changerator.py /path/to/assembly/
 ```
-Just direct the script to the directory containing all of your assembler output directories. 
+Just direct the script to the directory containing all of your assembler output directories.
 
+#### Re_header
+
+```
+re_header.py -h
+```
+Re_header.py is useful for those instances where you want to change some (or all) of the fasta headers in a multi fasta file. You need a tsv file with the old/original fasta header and the new header.
+
+
+tsv example:
+```
+>old_fasta_1.fasta  >new_fasta_1.fasta
+>old_fasta_2.fasta  >new_fasta_2.fasta
+```
+
+To run re_header.py:
+
+```
+$ re_header.py -i <input.fasta> -l <new_header.tsv> -o <output.fasta>
+```
+
+#### Remove_fasta.py
+
+```
+remove_fasta.py -h
+```
+
+Remove_fasta takes in a tsv file with a list of fastas you *don't* want in your multi fasta file.
+
+When you're writing the tsv file, only write the header, not the ">" character.
+
+
+tsv example:
+```
+dont_want_this1
+dont_want_this2
+dont_want_this3
+```
+
+To run remove_fasta.py:
+
+```
+$ remove_fasta.py -i <input.fasta> -t <fastas_to_remove.tsv> -o <output.fasta>
+```
 ## Authors
 
 * **Rachael St. Jacques** - *Me* - [stjacqrm](https://github.com/stjacqrm)
