@@ -17,7 +17,7 @@ import csv
 
 parser=argparse.ArgumentParser(description="program that replaces fasta headers")
 parser.add_argument("-i", help="input fasta", type= str, required=True)
-parser.add_argument("-l", help="tsv file with replacement header lines", required=True)
+parser.add_argument("-t", help="tsv file with replacement header lines", required=True)
 parser.add_argument("-o", help="output fasta")
 args = parser.parse_args()
 
@@ -26,7 +26,7 @@ newfasta=open(args.o,'w')
 
 # load lookup table into dict format
 lookup_dict = {}
-with open(args.l) as lookup_handle:
+with open(args.t) as lookup_handle:
     lookup_list = csv.reader(lookup_handle, delimiter='\t')
     for entry in lookup_list:
         lookup_dict[entry[0]] = entry[1]
@@ -36,7 +36,6 @@ with open(args.l) as lookup_handle:
 fasta_file=open(args.i)
 for line in fasta_file:
     line = line.rstrip("\n")
-    print("space stripped after line")
     if line.startswith('>'):
         print("string starts with '>'")
         if line in lookup_dict.keys():
@@ -50,6 +49,5 @@ for line in fasta_file:
             print("no new name was identified, original name was correct")
     else:
         newfasta.write(line+"\n")
-        print("no fastas needed a change")
 
 print("all fasta files were reheaded and saved to " + args.o)

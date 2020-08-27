@@ -71,7 +71,7 @@ tsv example:
 To run re_header.py:
 
 ```
-$ re_header.py -i <input.fasta> -l <new_header.tsv> -o <output.fasta>
+$ re_header.py -i <input.fasta> -t <new_header.tsv> -o <output.fasta>
 ```
 
 #### Remove_fasta.py
