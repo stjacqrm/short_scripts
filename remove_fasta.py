@@ -4,6 +4,12 @@
 # Authors: Rachael St. Jacques and StackOverflow
 # email: rachael.stjacques@dgs.virginia.gov
 
+####################################################################
+###                     Helpful hints                            ###
+### Use grep "^>" fasta.fasta to help generate the table         ###
+### Example lookup table line: what_you_want_gone                ###
+####################################################################
+
 from Bio import SeqIO
 import argparse
 import csv
