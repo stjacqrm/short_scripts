@@ -1,4 +1,4 @@
-# random_scripts
+# short_scripts
 
 Just some short scripts that solve the world's smallest bioinformatics problems.
 
