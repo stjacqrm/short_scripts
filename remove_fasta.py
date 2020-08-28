@@ -11,6 +11,7 @@
 ####################################################################
 
 from Bio import SeqIO
+import sys
 import argparse
 import csv
 
