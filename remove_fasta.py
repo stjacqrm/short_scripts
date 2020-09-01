@@ -6,8 +6,8 @@
 
 ####################################################################
 ###                     Helpful hints                            ###
-### Use grep "^>" fasta.fasta to help generate the table         ###
-### Example lookup table line: what_you_want_gone                ###
+###    Use grep "^>" fasta.fasta to help generate the table      ###
+###           Example table line: what_you_want_gone             ###
 ####################################################################
 
 from Bio import SeqIO
