@@ -45,6 +45,8 @@ class MyCustomTranslator(BiopythonTranslator):
             return None
         elif feature.type == "mRNA":
             return None
+        elif feature.type == "source":
+            return None
         elif feature.type == "exon":
             return "exon"
         elif feature.type == "mRNA_with_minus_1_frameshift":
@@ -58,10 +60,12 @@ class MyCustomTranslator(BiopythonTranslator):
             feature for feature in features
             if (feature.type != "CDS")
             if (feature.type != "mRNA")
+            if (feature.type != "source")
         ]
 
 
 graphic_record = MyCustomTranslator().translate_record(args.g)
+print(graphic_record)
 ax, _ = graphic_record.plot(figure_width=30)
 ax.figure.tight_layout()
 ax.figure.savefig(args.o)
