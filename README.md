@@ -6,7 +6,7 @@ Just some short scripts that solve the world's smallest bioinformatics problems.
 
 ### Prerequisites
 
-What dependencies you need to run random_scripts
+What dependencies you need to run short_scripts
 
 ```
 python3.6+
@@ -32,10 +32,10 @@ $ source ~/.bashrc
 
 ### Installing the code
 
-To get random_scripts, clone this repository:
+To get short_scripts, clone this repository:
 
 ```
-$ git clone https://github.com/stjacqrm/random_scripts.git
+$ git clone https://github.com/stjacqrm/short_scripts.git
 ```
 
 ## Current scripts
